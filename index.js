@@ -41,14 +41,31 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Write your code here//
 
 //CHALLENGE 1: GET All posts
+app.get("/posts", (req, res) => {
+  console.log(posts)
+  res.json(posts)
+})
 
 //CHALLENGE 2: GET a specific post by id
+app.post("posts/:id", (req, res) => {
+
+})
 
 //CHALLENGE 3: POST a new post
+app.post("/posts", (req, res) => {
+
+})
 
 //CHALLENGE 4: PATCH a post when you just want to update one parameter
+app.patch("/posts/:id", (req, res) => {
+
+})
 
 //CHALLENGE 5: DELETE a specific post by providing the post id.
+app.delete("/posts/:id", (req, res) => {
+
+})
+
 
 app.listen(port, () => {
   console.log(`API is running at http://localhost:${port}`);
